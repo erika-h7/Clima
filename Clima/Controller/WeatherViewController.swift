@@ -24,13 +24,33 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func searchPressed(_ sender: UIButton) {
+        searchTextField.endEditing(true)
         print(searchTextField.text!)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Dismisses the keyboard when triggerd enter or search button
+        searchTextField.endEditing(true)
         print(searchTextField.text!)
         
         return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "Type a City or State"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        
+        
+        // Reset searchTextField to an empty string
+        searchTextField.text = ""
     }
     
     
