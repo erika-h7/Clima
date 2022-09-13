@@ -34,6 +34,9 @@
                                                 </constraints>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="locationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTM-7T-o6u"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="2eh-wL-W34">
                                                 <rect key="frame" x="50" y="0.0" width="274" height="40"/>
@@ -64,7 +67,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx9-I8-UoC">
-                                        <rect key="frame" x="176" y="180" width="198" height="119.5"/>
+                                        <rect key="frame" x="191" y="180" width="183" height="119.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" text="21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9o-tW-03D" userLabel="Temperature Label">
                                                 <rect key="frame" x="0.0" y="0.0" width="93" height="119.5"/>
@@ -76,8 +79,8 @@
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHH-vY-Mrb" userLabel="Temperature Label">
-                                                <rect key="frame" x="131" y="0.0" width="67" height="119.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHH-vY-Mrb" userLabel="Temperature Label">
+                                                <rect key="frame" x="131" y="0.0" width="52" height="119.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -120,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-568" y="111"/>
+            <point key="canvasLocation" x="-396" y="65"/>
         </scene>
     </scenes>
     <resources>
